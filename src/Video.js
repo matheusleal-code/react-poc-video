@@ -6,7 +6,7 @@ import Webcam from "react-webcam";
 const Video = () => {
   return (
     <div>
-      <video src="https://dl6.webmfiles.org/big-buck-bunny_trailer.webm" controls={true}></video>
+      <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls={true}></video>
     </div>
   );
 };
