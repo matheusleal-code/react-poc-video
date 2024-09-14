@@ -1,10 +1,11 @@
 import './App.css';
+import WebCam from './WebCam';
 import WebcamRecorder from './WebcamRecorder';
 
 function App() {
   return (
     <div className="App">
-      <WebcamRecorder />
+      <WebCam />
     </div>
   );
 }
