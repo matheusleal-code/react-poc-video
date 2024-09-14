@@ -10,7 +10,6 @@ const WebcamRecorder = () => {
   const [mimeType, setMimeType] = useState('');
 
   useEffect(() => {
-    // Detectar o tipo MIME suportado
     const types = [
       'video/webm',
       'video/webm;codecs=vp9',
@@ -97,6 +96,7 @@ const WebcamRecorder = () => {
         ref={webcamRef}
         videoConstraints={videoConstraints}
         className="w-full max-w-md mb-4"
+        mirrored={true}  // Esta é a linha que corrige o problema da inversão
       />
       <div className="flex justify-center space-x-4">
         {capturing ? (
