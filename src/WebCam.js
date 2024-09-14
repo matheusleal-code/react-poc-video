@@ -89,15 +89,16 @@ const WebCam = () => {
   }, []);
 
   const startRecording = async () => {
+    console.log('mimeType ', mimeType)
     if (videoRef.current && videoRef.current.srcObject) {
       const stream = videoRef.current.srcObject;
-      const options = { mimeType: "video/webm; codecs=vp9" };
+      const options = { mimeType };
       const mediaRecorder = new MediaRecorder(stream, options);
 
       mediaRecorder.ondataavailable = async (event) => {
         if (event.data.size > 0) {
           setRecordedChunks((prev) => [...prev, event.data]);
-          const blob = new Blob([event.data], { type: "video/webm" });
+          const blob = new Blob([event.data], { type: mimeType });
           setVideoURL(URL.createObjectURL(blob));
         }
       };
