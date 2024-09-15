@@ -18,6 +18,7 @@ function App() {
       <video
               src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
               controls={false}
+              playsInline
               style={{ width: "30%"}}
               ref={videoRef}
             ></video>
