@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import './App.css';
 import Video from './Video';
 import WebCam from './WebCam';
 import WebcamRecorder from './WebcamRecorder';
@@ -16,10 +15,10 @@ function App() {
   return (
     <div className="App">
       <video
-              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
-              controls={false}
+              src="https://edisciplinas.usp.br/pluginfile.php/5196653/mod_resource/content/1/V%C3%ADdeo.mp4"
+              controls={true}
               playsInline
-              style={{ width: "30%"}}
+              style={{ width: "50%"}}
               ref={videoRef}
             ></video>
       <WebcamRecorder />
