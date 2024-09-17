@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import Video from './Video';
 import WebCam from './WebCam';
 import WebcamRecorder from './WebcamRecorder';
+import SimpleThumbnailTest from './SimpleThumbnail';
 
 function App() {
   const videoRef = useRef(null);
@@ -21,7 +22,7 @@ function App() {
               style={{ width: "50%"}}
               ref={videoRef}
             ></video>
-      <WebcamRecorder />
+      <SimpleThumbnailTest />
       <button onClick={startVideoAndRecording}>Iniciar video</button>
     </div>
   );
