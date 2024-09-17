@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <video
-              src="https://edisciplinas.usp.br/pluginfile.php/5196653/mod_resource/content/1/V%C3%ADdeo.mp4"
+              src="https://edisciplinas.usp.br/pluginfile.php/5196653/mod_resource/content/1/V%C3%ADdeo.mp4#t=0.001"
               controls={false}
               playsInline
               style={{ width: "50%"}}
