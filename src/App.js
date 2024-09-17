@@ -20,7 +20,6 @@ function App() {
               playsInline
               style={{ width: "50%"}}
               ref={videoRef}
-              poster="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/PNG_Test.png/477px-PNG_Test.png?20240730205008"
             ></video>
       <WebcamRecorder />
       <button onClick={startVideoAndRecording}>Iniciar video</button>
